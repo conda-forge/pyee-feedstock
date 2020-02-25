@@ -16,14 +16,14 @@ build:
 
 requirements:
   build:
-    - python
+    - python >=3.6
     - pip
     - vcversioner
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
