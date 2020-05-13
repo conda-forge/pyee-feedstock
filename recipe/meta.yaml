@@ -8,34 +8,32 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: b0e5b89b17c8bd52a3c6517a545187907a8c69ce90169d29ebd8d2d5d7e4bc7d
-  patches:
-    - setup.patch
 
 build:
   noarch: python
-  number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 1
+  script: cd {{ RECIPE_DIR }} && {{ PYTHON }} builder.py
 
 requirements:
-  build:
-    - python
-    - pip
-    - vcversioner
   host:
-    - python
     - pip
+    - python
   run:
     - python
 
 test:
+  requires:
+    - pip
   imports:
     - pyee
+  commands:
+    - python -m pip check
 
 about:
   home: https://github.com/jfhbrook/pyee
   license: MIT
   license_family: MIT
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  license_file: LICENSE
   summary: "A port of node.js's EventEmitter to python."
   doc_url: https://pyee.readthedocs.io/
   dev_url: https://github.com/jfhbrook/pyee
