@@ -1,5 +1,5 @@
 {% set name = "pyee" %}
-{% set version = "7.0.2" %}
+{% set version = "7.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c908d1ecb32918bbf7dbb895a093153b0ca1ed8f04fc067d98bd4c5917aeb3d8
+  sha256: 30c3e90bb44311af98e0958cae7c5a3acbbfb35b0ec87f7fa1275ba9e12e31f3
 
 build:
   noarch: python
@@ -34,7 +34,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "A port of node.js's EventEmitter to python."
+  summary: A port of node.js's EventEmitter to python.
   doc_url: https://pyee.readthedocs.io/
   dev_url: https://github.com/jfhbrook/pyee
 
