@@ -5,11 +5,13 @@ Home: https://github.com/jfhbrook/pyee
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyee-feedstock/blob/master/LICENSE.txt)
 
 Summary: A port of node.js's EventEmitter to python.
 
+Development: https://github.com/jfhbrook/pyee
 
+Documentation: https://pyee.readthedocs.io/
 
 Current build status
 ====================
