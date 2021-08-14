@@ -1,5 +1,5 @@
 {% set name = "pyee" %}
-{% set version = "8.1.0" %}
+{% set version = "8.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 92dacc5bd2bdb8f95aa8dd2585d47ca1c4840e2adb95ccf90034d64f725bfd31
+  sha256: c058005d4008ba154935794f474ee008d3a497821c502bb0dca194c8eba42afc
 
 build:
   noarch: python
