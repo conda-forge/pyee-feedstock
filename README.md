@@ -121,4 +121,5 @@ Feedstock Maintainers
 =====================
 
 * [@kiwi0fruit](https://github.com/kiwi0fruit/)
+* [@mxschmitt](https://github.com/mxschmitt/)
 
