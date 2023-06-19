@@ -1,5 +1,5 @@
 {% set name = "pyee" %}
-{% set version = "9.1.0" %}
+{% set version = "10.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,19 +7,21 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a2287af31d6ce6e662ebf8034ea2c3e38dea02ebac63f6a41db23825bf6649d4
+  sha256: b767899d653f0f2a9a35ddb4fcce1e7555fd89758d9d9ae017329fa46f242d3d
 
 build:
   noarch: python
   number: 0
-  script: cd {{ RECIPE_DIR }} && {{ PYTHON }} builder.py
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
+    - setuptools-scm
+    - wheel
   run:
-    - python >=3.7
+    - python >=3.8
     - typing_extensions
 
 test:
