@@ -12,12 +12,14 @@ source:
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools-scm
+    - wheel
   run:
     - python >=3.8
     - typing_extensions
