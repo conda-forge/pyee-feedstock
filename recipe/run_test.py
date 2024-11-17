@@ -1,6 +1,6 @@
 import os
-import pkg_resources
+from importlib.metadata import version
 
 
-assert pkg_resources.get_distribution("pyee").version == os.environ["PKG_VERSION"], \
+assert version("pyee") == os.environ["PKG_VERSION"], \
     "package version does not match expected version"
