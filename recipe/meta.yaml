@@ -1,13 +1,13 @@
 {% set name = "pyee" %}
-{% set version = "13.0.1" %}
+{% set version = "14.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0b931f7c14535667ed4c7e0d531716368715e860b988770fc7eb8578d1f67fc8
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 76dd0f4314ecd27f02dc73589dea7fd3853f9b6176d8ef9b122860657e3602de
 
 build:
   noarch: python
