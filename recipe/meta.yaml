@@ -1,5 +1,5 @@
 {% set name = "pyee" %}
-{% set version = "16.0.1" %}
+{% set version = "16.0.2" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bdc6e9214429ae5ec10b8a51604cf68c363b11cbc105e3da72204fce8c111e59
+  sha256: 31cb31131df7757f2a54fbd98ea5d37e736dc8a9f41ec4bdce40892a32474ec8
 
 build:
   noarch: python
